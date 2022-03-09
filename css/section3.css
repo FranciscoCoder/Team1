@@ -1,0 +1,16 @@
+
+
+.section3 .flower_background{
+  background-image: url('../img/flower_background.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 4em 0;
+}
+
+.content_flower_background{
+  width: 85%;
+  margin: 0 auto;
+
+}
