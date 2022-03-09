@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Playfair_regular';
+	src: url('../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 0.785rem;
+}
