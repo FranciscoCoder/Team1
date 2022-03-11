@@ -443,6 +443,69 @@ body {
 }
 /* END Section 3 */
 
+/* Section 4*/
+.section4{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.section4 .fondo{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.section4 img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.section4 .quote{
+  margin-top: 3em;
+  width: 10%;
+  height: auto;
+}
+.section4 .box{
+  width: 100%;
+  background-image: url("../img/appleflower.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.section4 .texto {
+  width: 40%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5em 0;
+}
+.section4 .texto p{
+    font-style: italic;
+    margin-top: 1em;
+}
+.section4 .texto h2{
+  margin-top: 1em;
+}
+.section4 .texto h3{
+  margin-top: .8em;
+  color:rgb(107, 107, 107);
+  font-size: .8em;
+}
+.section4 .flores{
+  width: 100%;
+  display: flex;
+ }
+.section4 .flores img{
+  width: 100%;
+}
+.section4 .flores div{
+  width: 20%;
+  padding: .3em;
+}
+/*END Section 4*/
+
 /*RESPONSIVES*/
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
