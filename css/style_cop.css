@@ -652,142 +652,145 @@ header a {
 }
 /*END Section 4*/
 
-/* Footer */
-
-footer h5 {
+/* Footer*/
+h5 {
   font-family: "Playfair_regular";
+  font-size: 1.6rem;
 }
-footer .footer {
+.footer {
   width: 80%;
   margin: 0 auto;
 }
-footer .footer i {
+.footer i {
   margin: 0 0.5em;
 }
-footer .logoredes {
+.logoredes {
   display: flex;
   padding: 1em;
   margin: 0 auto;
   border-bottom: 1px solid #eaeaea;
 }
-footer .Logo {
+.Logo {
   width: 20%;
   height: auto;
 }
-footer .Logo img {
+.Logo img {
   width: 100%;
   height: auto;
 }
-footer .slogan {
+.slogan {
   width: 80%;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }
-footer .slogan p {
-  margin: 0 2em;
+.slogan p {
+  margin-top: 2em;
+  margin-left: 2em;
 }
-footer .rrssicons {
+.rrssicons {
   justify-content: space-between;
-  font-size: 0.6rem;
+  font-size: 1.6rem;
   display: flex;
 }
-footer .rrssicons i {
+.rrssicons i {
   margin-top: 2.5em;
   margin-right: 1em;
 }
-footer .divfooter1 {
+.divfooter1 {
   display: flex;
   font-family: "RobotoRegular";
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 1.5em;
 }
-footer .footer1 {
+.footer1 {
   display: flex;
   width: 33.3%;
   flex-wrap: nowrap;
 }
-footer .footer1 a {
+.footer1 a {
   color: black;
   text-decoration: none;
 }
-footer .Company {
+.Company {
   width: 50%;
   margin-right: 1em;
 }
-footer .Account {
+.Account {
   width: 50%;
 }
-footer .Account h5,
-footer .Company h5 {
+
+.Account h5,
+.Company h5 {
   padding: 0.5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
   padding-top: 1em;
 }
-footer .Account p,
-footer .Company p {
-  padding: 1em;
-  font-size: 0.6rem;
+.Account p,
+.Company p {
+  padding: 0.5em;
+  font-size: 1.1rem;
   color: black;
 }
-footer .Newsletter {
+.Newsletter {
   width: 33.3%;
   border-left: 1px solid #eaeaea;
   border-right: 1px solid #eaeaea;
 }
-footer .Newsletter h5 {
+.Newsletter h5 {
   padding: 1em;
 }
-footer .Newsletter p {
-  font-size: 0.6rem;
+.Newsletter p {
+  font-size: 1.1rem;
   color: black;
 }
-footer .Newsletter > div {
+.Newsletter > div {
   width: 80%;
   margin: 0 auto;
 }
-footer .Newsletter p {
+.Newsletter p {
   margin: 1em 0;
 }
-footer .formsubscribe form div {
+.formsubscribe form div {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  font-size: 0.6rem;
+  font-size: 1.1rem;
   padding-bottom: 0.5em;
   border-bottom: 1px solid black;
 }
-footer .formsubscribe form div input {
+.formsubscribe form div input {
   width: 100%;
   outline: none;
-  font-size: 0.6rem;
+  font-size: 1.1rem;
 }
-footer .formsubscribe form div button {
-  font-size: 0.6rem;
+.formsubscribe form div button {
+  font-size: 1.1rem;
   background: none;
 }
-footer .getintouch {
+.getintouch {
   width: 33.3%;
   margin-left: 1em;
 }
-footer .getintouch h5 {
+.getintouch h5 {
   padding: 1em;
 }
-footer .getintouch p {
-  font-size: 0.6rem;
-  padding: 1em;
+.getintouch p {
+  font-size: 1.1rem;
+  padding: 0.5em;
   color: black;
 }
-footer .copyright {
+.copyright {
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
-  font-size: 0.6rem;
-  padding: 1em;
+  font-size: 1.2rem;
+  padding: 0.5em;
 }
-footer .copyright > span {
+.copyright > div {
   color: #f45d96;
   display: flex;
 }
-footer .copyright > div > p {
+.copyright > div > p {
   color: black;
 }
 /* End Footer */
