@@ -431,7 +431,7 @@ body {
   font-size: 1rem;
 }
 
-.section3 .section3 .desc_post {
+.section3 .desc_post {
   padding: 1em 0;
   line-height: 1.2rem;
   color: grey;
@@ -444,35 +444,33 @@ body {
 /* END Section 3 */
 
 /* Section 4*/
-.section4{
+.section4 {
   /* width: 85%; */
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  
 }
-.section4 .fondo{
+.section4 .fondo {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-.section4 img{
+.section4 img {
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
-.section4 .quote{
+.section4 .quote {
   margin-top: 3em;
   width: 10%;
   height: auto;
 }
-.section4 .box{
+.section4 .box {
   width: 100%;
   background-image: url("../img/appleflower.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .section4 .texto {
   width: 40%;
@@ -481,33 +479,172 @@ body {
   text-align: center;
   padding: 5em 0;
 }
-.section4 .texto p{
-    font-style: italic;
-    margin-top: 1em;
-}
-.section4 .texto h2{
+.section4 .texto p {
+  font-style: italic;
   margin-top: 1em;
 }
-.section4 .texto h3{
-  margin-top: .8em;
-  color:rgb(107, 107, 107);
-  font-size: .8em;
+.section4 .texto h2 {
+  margin-top: 1em;
 }
-.section4 .flores{
+.section4 .texto h3 {
+  margin-top: 0.8em;
+  color: rgb(107, 107, 107);
+  font-size: 0.8em;
+}
+.section4 .flores {
   width: 100%;
   display: flex;
- }
-.section4 .flores img{
+}
+.section4 .flores img {
   width: 100%;
 }
-.section4 .flores div{
+.section4 .flores div {
   width: 20%;
-  padding: .3em;
+  padding: 0.3em;
 }
 /*END Section 4*/
 
-/*RESPONSIVES*/
+/* Footer */
 
+footer h5 {
+  font-family: "Playfair_regular";
+}
+footer .footer {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .footer i {
+  margin: 0 0.5em;
+}
+footer .logoredes {
+  display: flex;
+  padding: 1em;
+  margin: 0 auto;
+  border-bottom: 1px solid #eaeaea;
+}
+footer .Logo {
+  width: 20%;
+  height: auto;
+}
+footer .Logo img {
+  width: 100%;
+  height: auto;
+}
+footer .slogan {
+  width: 80%;
+  font-size: 0.8rem;
+}
+footer .slogan p {
+  margin: 0 2em;
+}
+footer .rrssicons {
+  justify-content: space-between;
+  font-size: 0.6rem;
+  display: flex;
+}
+footer .rrssicons i {
+  margin-top: 2.5em;
+  margin-right: 1em;
+}
+footer .divfooter1 {
+  display: flex;
+  font-family: "RobotoRegular";
+  justify-content: center;
+  margin: 0 auto;
+}
+footer .footer1 {
+  display: flex;
+  width: 33.3%;
+  flex-wrap: nowrap;
+}
+footer .footer1 a {
+  color: black;
+  text-decoration: none;
+}
+footer .Company {
+  width: 50%;
+  margin-right: 1em;
+}
+footer .Account {
+  width: 50%;
+}
+footer .Account h5,
+footer .Company h5 {
+  padding: 0.5em;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+}
+footer .Account p,
+footer .Company p {
+  padding: 1em;
+  font-size: 0.6rem;
+  color: black;
+}
+footer .Newsletter {
+  width: 33.3%;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+footer .Newsletter h5 {
+  padding: 1em;
+}
+footer .Newsletter p {
+  font-size: 0.6rem;
+  color: black;
+}
+footer .Newsletter > div {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .Newsletter p {
+  margin: 1em 0;
+}
+footer .formsubscribe form div {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  font-size: 0.6rem;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid black;
+}
+footer .formsubscribe form div input {
+  width: 100%;
+  outline: none;
+  font-size: 0.6rem;
+}
+footer .formsubscribe form div button {
+  font-size: 0.6rem;
+  background: none;
+}
+footer .getintouch {
+  width: 33.3%;
+  margin-left: 1em;
+}
+footer .getintouch h5 {
+  padding: 1em;
+}
+footer .getintouch p {
+  font-size: 0.6rem;
+  padding: 1em;
+  color: black;
+}
+footer .copyright {
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  font-size: 0.6rem;
+  padding: 1em;
+}
+footer .copyright > span {
+  color: #f45d96;
+  display: flex;
+}
+footer .copyright > div > p {
+  color: black;
+}
+/* End Footer */
+
+/*RESPONSIVES*/
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 2000px) {
   .section_01 .business_icon i {
