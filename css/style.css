@@ -1,11 +1,12 @@
 @font-face {
-	font-family: 'RobotoRegular';
-	src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-family: "RobotoRegular";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Playfair_regular';
-	src: url('../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-family: "Playfair_regular";
+  src: url("../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf")
+    format("truetype");
 }
 
 * {
@@ -29,11 +30,12 @@
   --white: #fff;
 }
 
-
 body {
   min-width: 250px;
   max-width: 20000px;
 }
+
+/* Section 1 */
 .section_01 {
   width: 85%;
   margin: 0 auto;
@@ -95,10 +97,12 @@ body {
   font-weight: 400;
   color: var(--dark-gray);
 }
-.section_01 .business_info h3 , .section_01 .business_info p {
+.section_01 .business_info h3,
+.section_01 .business_info p {
   margin: 0.25em 0;
 }
-.section_01 .product_info h2 , .section_01 .product_info p {
+.section_01 .product_info h2,
+.section_01 .product_info p {
   text-align: center;
 }
 .section_01 .image_01 {
@@ -198,7 +202,8 @@ body {
   background-color: var(--white);
   z-index: 2;
 }
-.section_01 .contact_info h2 , .section_01 .contact_info p {
+.section_01 .contact_info h2,
+.section_01 .contact_info p {
   margin: 2.5% 5% 0;
 }
 .section_01 .contact_info h2 {
@@ -222,6 +227,221 @@ body {
   margin: 5% 5% 5%;
   cursor: pointer;
 }
+/* END Section 1 */
+
+/* Section 3 */
+.section3 * {
+  transition: all 0.3s ease-in-out;
+}
+
+.section3 .flower_background {
+  background-image: url("../img/flower_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 4em 0;
+}
+
+.section3 .content_flower_background,
+.section3 .body_last_post {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.section3 .content_flower_background > div:first-of-type > div {
+  width: 80%;
+  max-width: 530px;
+}
+
+.section3 .title_flower_back {
+  font-family: "RobotoRegular";
+  font-size: 1.5rem;
+  margin: 0 0 1em;
+}
+
+.section3 .txt_flower_back {
+  font-family: "Playfair_regular";
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 2.7rem;
+}
+
+.section3 .title_flower_back,
+.section3 .txt_flower_back {
+  text-shadow: 1px 1px 5px #000;
+  color: #fff;
+}
+
+.section3 .link_flower_background {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 0 0;
+}
+
+.section3 .link_flower_background a {
+  text-decoration: none;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  font-size: 1.5rem;
+  margin: 1em 1em 0 0;
+  font-family: "RobotoRegular";
+  background-color: #fff;
+  color: #f45d96;
+}
+
+.section3 .link_flower_background a:hover {
+  background-color: #f45d96;
+  color: #fff;
+}
+
+.section3 .link_flower_background a:first-child {
+  background-color: #f45d96;
+  color: #fff;
+}
+
+.section3 .link_flower_background a:first-child:hover {
+  background-color: #fff;
+  color: #f45d96;
+}
+
+.section3 .blog_home {
+  padding: 3em 0;
+}
+
+.section3 .title_last_post {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 0 4em;
+  margin: 0 1%;
+}
+
+.section3 .title_last_post div {
+  width: 50%;
+  text-align: right;
+}
+
+.section3 .title_last_post div:first-of-type {
+  text-align: left;
+}
+
+.section3 .title_last_post span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #f45d96;
+  margin: 0 0 0.5em;
+  font-family: "RobotoRegular";
+}
+
+.section3 .title_last_post h3 {
+  font-family: "Playfair_regular";
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.section3 .title_last_post a {
+  text-decoration: none;
+  border: 2px solid #f45d96;
+  border-radius: 2em;
+  padding: 1em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "RobotoRegular";
+}
+
+.section3 .title_last_post a:hover {
+  background-color: #f45d96;
+  color: #fff;
+}
+
+.section3 .list_posts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.section3 .post_home {
+  width: 31.33%;
+  margin: 1em 1%;
+  box-shadow: 0 0 1.2em grey;
+  overflow: hidden;
+}
+
+.section3 .post_home:hover {
+  transform: scale(1.05);
+}
+
+.section3 .post_home a {
+  color: transparent;
+  text-decoration: none;
+  display: block;
+}
+
+.section3 .post_home .body_post {
+  position: relative;
+}
+
+.section3 .post_home > a > div:first-of-type {
+  aspect-ratio: 1/1;
+}
+
+.section3 .post_home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section3 .body_post {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.section3 .categorie_post {
+  position: absolute;
+  top: -1.3em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.section3 .categorie_post div {
+  padding: 0.4em 0.8em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "RobotoRegular";
+}
+
+.section3 .title_post {
+  font-size: 1.4rem;
+  font-family: "Playfair_regular";
+  color: #000;
+}
+
+.section3 .desc_post,
+.date_post {
+  font-family: "RobotoRegular";
+  font-size: 1rem;
+}
+
+.section3 .section3 .desc_post {
+  padding: 1em 0;
+  line-height: 1.2rem;
+  color: grey;
+}
+
+.section3 .date_post {
+  text-transform: uppercase;
+  color: grey;
+}
+/* END Section 3 */
 
 /*RESPONSIVES*/
 
@@ -261,33 +481,33 @@ body {
 /* Large devices (laptops/desktops, between 993px and 1200px) */
 @media only screen and (max-width: 1200px) {
   .section_01 .business_icon i {
-    font-size: calc(1.0 / 0.785 * 2rem);
+    font-size: calc(1 / 0.785 * 2rem);
   }
   .section_01 .business_info h3,
   .section_01 .product_info h2 {
-    font-size: calc(1.0 / 0.785 * 1.2rem);
+    font-size: calc(1 / 0.785 * 1.2rem);
   }
   .section_01 .business_info p,
   .section_01 .product_info p {
-    font-size: calc(1.0 / 0.785 * 1rem);
+    font-size: calc(1 / 0.785 * 1rem);
   }
   .section_01 .service_title h2 {
-    font-size: calc(1.0 / 0.785 * 2.9rem);
+    font-size: calc(1 / 0.785 * 2.9rem);
   }
   .section_01 .service_title p,
   .section_01 .contact_info h3 {
-    font-size: calc(1.0 / 0.785 * 1rem);
+    font-size: calc(1 / 0.785 * 1rem);
   }
   .section_01 .service_info p,
   .section_01 .contact_info p {
-    font-size: calc(1.0 / 0.785 * 1.2rem);
-    line-height: calc(1.0 / 0.785 * 2.2rem);
+    font-size: calc(1 / 0.785 * 1.2rem);
+    line-height: calc(1 / 0.785 * 2.2rem);
   }
   .section_01 .contact_info h2 {
-    font-size: calc(1.0 / 0.785 * 2.5);
+    font-size: calc(1 / 0.785 * 2.5);
   }
   .section_01 .contact_info button {
-    font-size: calc(1.0 / 0.785 * 0.8rem);
+    font-size: calc(1 / 0.785 * 0.8rem);
   }
 }
 
@@ -377,6 +597,7 @@ body {
 
 /* Extra small devices (phones, between 500 px and 600px) */
 @media only screen and (max-width: 600px) {
+  /* Section 1 */
   .section_01 .service_description {
     flex-direction: column;
   }
@@ -387,34 +608,51 @@ body {
     width: 100%;
   }
   .section_01 .business_icon i {
-    font-size: calc(1.0 / 0.785 * 2rem);
+    font-size: calc(1 / 0.785 * 2rem);
   }
   .section_01 .business_info h3,
   .section_01 .product_info h2 {
-    font-size: calc(1.0 / 0.785 * 1.2rem);
+    font-size: calc(1 / 0.785 * 1.2rem);
   }
   .section_01 .business_info p,
   .section_01 .product_info p {
-    font-size: calc(1.0 / 0.785 * 1rem);
+    font-size: calc(1 / 0.785 * 1rem);
   }
   .section_01 .service_title h2 {
-    font-size: calc(1.0 / 0.785 * 2.9rem);
+    font-size: calc(1 / 0.785 * 2.9rem);
   }
   .section_01 .service_title p,
   .section_01 .contact_info h3 {
-    font-size: calc(1.0 / 0.785 * 1rem);
+    font-size: calc(1 / 0.785 * 1rem);
   }
   .section_01 .service_info p,
   .section_01 .contact_info p {
-    font-size: calc(1.0 / 0.785 * 1.2rem);
-    line-height: calc(1.0 / 0.785 * 2.2rem);
+    font-size: calc(1 / 0.785 * 1.2rem);
+    line-height: calc(1 / 0.785 * 2.2rem);
   }
   .section_01 .contact_info h2 {
-    font-size: calc(1.0 / 0.785 * 2.5);
+    font-size: calc(1 / 0.785 * 2.5);
   }
   .section_01 .contact_info button {
-    font-size: calc(1.0 / 0.785 * 0.8rem);
+    font-size: calc(1 / 0.785 * 0.8rem);
   }
+  /* End Section 1 */
+
+  /* Section 3 */
+  .section3 .post_home {
+    width: 98%;
+  }
+
+  .section3 .title_last_post div {
+    width: 100%;
+  }
+  .section3 .title_last_post div:first-of-type {
+    margin: 0 0 2em;
+  }
+  .section3 .title_last_post div:last-child {
+    text-align: center;
+  }
+  /* End Section 3 */
 }
 
 /* Very small devices (phones, smaller than 500 px) */
