@@ -204,3 +204,19 @@
   text-transform: uppercase;
   color: grey;
 }
+
+@media (max-width:600px){
+ .post_home{
+ width: 98%;
+ } 
+
+ .title_last_post div{
+   width: 100%;
+ }
+ .title_last_post div:first-of-type{
+   margin: 0 0 2em;
+ }
+ .title_last_post div:last-child{
+   text-align: center;
+ }
+}
