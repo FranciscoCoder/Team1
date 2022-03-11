@@ -1,11 +1,12 @@
 @font-face {
-	font-family: 'RobotoRegular';
-	src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-family: "RobotoRegular";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Playfair_regular';
-	src: url('../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-family: "Playfair_regular";
+  src: url("../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf")
+    format("truetype");
 }
 
 * {
@@ -28,7 +29,6 @@
   --dark-gray: #676c6f;
   --white: #fff;
 }
-
 
 body {
   min-width: 250px;
@@ -223,8 +223,6 @@ body {
   cursor: pointer;
 }
 
-/*RESPONSIVES*/
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 2000px) {
   .section_01 .business_icon i {
@@ -257,6 +255,8 @@ body {
     font-size: calc(1.1 / 0.785 * 0.8rem);
   }
 }
+
+
 
 /* Large devices (laptops/desktops, between 993px and 1200px) */
 @media only screen and (max-width: 1200px) {
