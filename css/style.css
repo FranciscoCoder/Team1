@@ -1,11 +1,12 @@
 @font-face {
-	font-family: 'RobotoRegular';
-	src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-family: "RobotoRegular";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: 'Playfair_regular';
-	src: url('../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-family: "Playfair_regular";
+  src: url("../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf")
+    format("truetype");
 }
 
 * {
@@ -23,4 +24,420 @@
 
 :root {
   font-size: 0.785rem;
+  --light-pink: #f466a9;
+  --black: #11111e;
+  --dark-gray: #676c6f;
+  --white: #fff;
+}
+body {
+  min-width: 250px;
+  max-width: 20000px;
+}
+.section_01 {
+  width: 85%;
+  margin: 0 auto;
+}
+.section_01 .business_qualities,
+.section_01 .product_display {
+  width: 100%;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.section_01 .business_qualities_box,
+.section_01 .product_display_box {
+  width: 23.5%;
+  margin: 2% 0;
+}
+.section_01 .business_qualities_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.section_01 .business_icon {
+  width: 20%;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  padding: 0.25% 0;
+}
+.section_01 .business_icon i {
+  color: var(--light-pink);
+  font-size: 2rem;
+  margin: 0.25% 0;
+}
+.section_01 .business_info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+.section_01 .business_info h3,
+.section_01 .product_info h2 {
+  font-family: "Playfair_regular";
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--black);
+}
+.section_01 .business_info p,
+.section_01 .product_info p {
+  font-family: "Playfair_regular";
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+.section_01 .business_info h3 , .section_01 .business_info p {
+  margin: 0.25em 0;
+}
+.section_01 .product_info h2 , .section_01 .product_info p {
+  text-align: center;
+}
+.section_01 .image_01 {
+  background-image: url(../img/vase-flower-01.jpg);
+}
+.section_01 .image_02 {
+  background-image: url(../img/vase-flower-02.jpg);
+}
+.section_01 .image_03 {
+  background-image: url(../img/vase-flower-03.jpg);
+}
+.section_01 .image_04 {
+  background-image: url(../img/vase-flower-04.jpg);
+}
+.section_01 .product_display_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  aspect-ratio: 3 / 4;
+}
+.section_01 .product_image {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 1;
+}
+.section_01 .product_info {
+  background-color: var(--white);
+  padding: 3% 1%;
+  width: 90%;
+  height: fit-content;
+  margin: 0 0 5% -95%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section_01 .service_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 0 0 5%;
+}
+.section_01 .service_title {
+  width: 40%;
+}
+.section_01 .service_info {
+  width: 55%;
+}
+.section_01 .service_title h2 {
+  font-family: "Playfair_regular";
+  font-size: 2.9rem;
+  color: var(--black);
+  text-align: left;
+}
+.section_01 .service_title p,
+.section_01 .contact_info h3 {
+  font-family: "RobotoRegular";
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--light-pink);
+  text-align: left;
+}
+.section_01 .service_info p,
+.section_01 .contact_info p {
+  font-family: "RobotoRegular";
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  color: var(--dark-gray);
+  text-align: left;
+}
+.section_01 .contact_component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 4em 0;
+}
+.section_01 .contact_image {
+  padding: 0;
+  background-image: url(../img/Girl-flower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  margin: 4% 0 0 0;
+  z-index: 1;
+}
+.section_01 .contact_info {
+  width: 50%;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.4);
+  margin: 0 0 4% -5%;
+  background-color: var(--white);
+  z-index: 2;
+}
+.section_01 .contact_info h2 , .section_01 .contact_info p {
+  margin: 2.5% 5% 0;
+}
+.section_01 .contact_info h2 {
+  font-family: "Playfair_regular";
+  font-size: 2.5rem;
+  color: var(--black);
+  text-align: left;
+  margin: 2.5% 5% 0;
+}
+.section_01 .contact_info h3 {
+  margin: 5% 5% 0;
+}
+.section_01 .contact_info button {
+  padding: 1em 1.75em;
+  border-radius: 2em;
+  font-family: "RobotoRegular";
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--white);
+  background-color: var(--light-pink);
+  margin: 5% 5% 5%;
+  cursor: pointer;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 2000px) {
+  .section_01 .business_icon i {
+    font-size: calc(1.1 / 0.785 * 2rem);
+  }
+  .section_01 .business_info h3,
+  .section_01 .product_info h2 {
+    font-size: calc(1.1 / 0.785 * 1.2rem);
+  }
+  .section_01 .business_info p,
+  .section_01 .product_info p {
+    font-size: calc(1.1 / 0.785 * 1rem);
+  }
+  .section_01 .service_title h2 {
+    font-size: calc(1.1 / 0.785 * 2.9rem);
+  }
+  .section_01 .service_title p,
+  .section_01 .contact_info h3 {
+    font-size: calc(1.1 / 0.785 * 1rem);
+  }
+  .section_01 .service_info p,
+  .section_01 .contact_info p {
+    font-size: calc(1.1 / 0.785 * 1.2rem);
+    line-height: calc(1.1 / 0.785 * 2.2rem);
+  }
+  .section_01 .contact_info h2 {
+    font-size: calc(1.1 / 0.785 * 2.5);
+  }
+  .section_01 .contact_info button {
+    font-size: calc(1.1 / 0.785 * 0.8rem);
+  }
+}
+
+
+
+/* Large devices (laptops/desktops, between 993px and 1200px) */
+@media only screen and (max-width: 1200px) {
+  .section_01 .business_icon i {
+    font-size: calc(1.0 / 0.785 * 2rem);
+  }
+  .section_01 .business_info h3,
+  .section_01 .product_info h2 {
+    font-size: calc(1.0 / 0.785 * 1.2rem);
+  }
+  .section_01 .business_info p,
+  .section_01 .product_info p {
+    font-size: calc(1.0 / 0.785 * 1rem);
+  }
+  .section_01 .service_title h2 {
+    font-size: calc(1.0 / 0.785 * 2.9rem);
+  }
+  .section_01 .service_title p,
+  .section_01 .contact_info h3 {
+    font-size: calc(1.0 / 0.785 * 1rem);
+  }
+  .section_01 .service_info p,
+  .section_01 .contact_info p {
+    font-size: calc(1.0 / 0.785 * 1.2rem);
+    line-height: calc(1.0 / 0.785 * 2.2rem);
+  }
+  .section_01 .contact_info h2 {
+    font-size: calc(1.0 / 0.785 * 2.5);
+  }
+  .section_01 .contact_info button {
+    font-size: calc(1.0 / 0.785 * 0.8rem);
+  }
+}
+
+/* Large devices (laptops/desktops, between 769px and 992px) */
+@media only screen and (max-width: 992px) {
+  .section_01 .business_icon i {
+    font-size: calc(0.7 / 0.785 * 2rem);
+  }
+  .section_01 .business_info h3,
+  .section_01 .product_info h2 {
+    font-size: calc(0.7 / 0.785 * 1.2rem);
+  }
+  .section_01 .business_info p,
+  .section_01 .product_info p {
+    font-size: calc(0.7 / 0.785 * 1rem);
+  }
+  .section_01 .service_title h2 {
+    font-size: calc(0.7 / 0.785 * 2.9rem);
+  }
+  .section_01 .service_title p,
+  .section_01 .contact_info h3 {
+    font-size: calc(0.7 / 0.785 * 1rem);
+  }
+  .section_01 .service_info p,
+  .section_01 .contact_info p {
+    font-size: calc(0.7 / 0.785 * 1.2rem);
+    line-height: calc(0.7 / 0.785 * 2.2rem);
+  }
+  .section_01 .contact_info h2 {
+    font-size: calc(0.7 / 0.785 * 2.5);
+  }
+  .section_01 .contact_info button {
+    font-size: calc(0.7 / 0.785 * 0.8rem);
+  }
+}
+
+/* Medium devices (landscape tablets, between 601px and 768px) */
+@media only screen and (max-width: 768px) {
+  .section_01 .business_qualities_box,
+  .section_01 .product_display_box {
+    width: 47%;
+  }
+  .section_01 .contact_component {
+    flex-direction: column;
+    margin: 2em 0;
+    height: fit-content;
+  }
+  .section_01 .contact_image {
+    width: 90%;
+    padding: 30% 0;
+    margin: 0 10% 0 0;
+  }
+  .section_01 .contact_info {
+    width: 90%;
+    margin: -5% 0 0 10%;
+  }
+  .section_01 .business_icon i {
+    font-size: calc(0.9 / 0.785 * 2rem);
+  }
+  .section_01 .business_info h3,
+  .section_01 .product_info h2 {
+    font-size: calc(0.9 / 0.785 * 1.2rem);
+  }
+  .section_01 .business_info p,
+  .section_01 .product_info p {
+    font-size: calc(0.9 / 0.785 * 1rem);
+  }
+  .section_01 .service_title h2 {
+    font-size: calc(0.9 / 0.785 * 2.9rem);
+  }
+  .section_01 .service_title p,
+  .section_01 .contact_info h3 {
+    font-size: calc(0.9 / 0.785 * 1rem);
+  }
+  .section_01 .service_info p,
+  .section_01 .contact_info p {
+    font-size: calc(0.9 / 0.785 * 1.2rem);
+    line-height: calc(0.9 / 0.785 * 2.2rem);
+  }
+  .section_01 .contact_info h2 {
+    font-size: calc(0.9 / 0.785 * 2.5);
+  }
+  .section_01 .contact_info button {
+    font-size: calc(0.9 / 0.785 * 0.8rem);
+  }
+}
+
+/* Extra small devices (phones, between 500 px and 600px) */
+@media only screen and (max-width: 600px) {
+  .section_01 .service_description {
+    flex-direction: column;
+  }
+  .section_01 .service_title {
+    width: 100%;
+  }
+  .section_01 .service_info {
+    width: 100%;
+  }
+  .section_01 .business_icon i {
+    font-size: calc(1.0 / 0.785 * 2rem);
+  }
+  .section_01 .business_info h3,
+  .section_01 .product_info h2 {
+    font-size: calc(1.0 / 0.785 * 1.2rem);
+  }
+  .section_01 .business_info p,
+  .section_01 .product_info p {
+    font-size: calc(1.0 / 0.785 * 1rem);
+  }
+  .section_01 .service_title h2 {
+    font-size: calc(1.0 / 0.785 * 2.9rem);
+  }
+  .section_01 .service_title p,
+  .section_01 .contact_info h3 {
+    font-size: calc(1.0 / 0.785 * 1rem);
+  }
+  .section_01 .service_info p,
+  .section_01 .contact_info p {
+    font-size: calc(1.0 / 0.785 * 1.2rem);
+    line-height: calc(1.0 / 0.785 * 2.2rem);
+  }
+  .section_01 .contact_info h2 {
+    font-size: calc(1.0 / 0.785 * 2.5);
+  }
+  .section_01 .contact_info button {
+    font-size: calc(1.0 / 0.785 * 0.8rem);
+  }
+}
+
+/* Very small devices (phones, smaller than 500 px) */
+@media (max-width: 500px) {
+  .section_01 .business_qualities_box,
+  .section_01 .product_display_box {
+    width: 100%;
+  }
+  .section_01 .service_title h2 {
+    font-size: calc(0.8 / 0.785 * 2.9rem);
+  }
+  .section_01 .service_title p,
+  .section_01 .contact_info h3 {
+    font-size: calc(0.8 / 0.785 * 1rem);
+  }
+  .section_01 .service_info p,
+  .section_01 .contact_info p {
+    font-size: calc(0.8 / 0.785 * 1.2rem);
+    line-height: calc(0.8 / 0.785 * 2.2rem);
+  }
+  .section_01 .contact_info h2 {
+    font-size: calc(0.8 / 0.785 * 2.5);
+  }
+  .section_01 .contact_info button {
+    font-size: calc(0.8 / 0.785 * 0.8rem);
+  }
 }
