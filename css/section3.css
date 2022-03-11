@@ -11,43 +11,43 @@
   padding: 4em 0;
 }
 
-.content_flower_background,
-.body_last_post {
+.section3 .content_flower_background,
+.section3 .body_last_post {
   width: 85%;
   margin: 0 auto;
 }
 
-.content_flower_background > div:first-of-type > div {
+.section3 .content_flower_background > div:first-of-type > div {
   width: 80%;
   max-width: 530px;
 }
 
-.title_flower_back {
+.section3 .title_flower_back {
   font-family: "RobotoRegular";
   font-size: 1.5rem;
   margin: 0 0 1em;
 }
 
-.txt_flower_back {
+.section3 .txt_flower_back {
   font-family: "Playfair_regular";
   font-size: 3rem;
   font-style: italic;
   line-height: 2.7rem;
 }
 
-.title_flower_back,
-.txt_flower_back {
+.section3 .title_flower_back,
+.section3 .txt_flower_back {
   text-shadow: 1px 1px 5px #000;
   color: #fff;
 }
 
-.link_flower_background {
+.section3 .link_flower_background {
   display: flex;
   flex-wrap: wrap;
   margin: 2em 0 0;
 }
 
-.link_flower_background a {
+.section3 .link_flower_background a {
   text-decoration: none;
   border-radius: 1em;
   padding: 0.5em 1em;
@@ -58,26 +58,26 @@
   color: #f45d96;
 }
 
-.link_flower_background a:hover {
+.section3 .link_flower_background a:hover {
   background-color: #f45d96;
   color: #fff;
 }
 
-.link_flower_background a:first-child {
+.section3 .link_flower_background a:first-child {
   background-color: #f45d96;
   color: #fff;
 }
 
-.link_flower_background a:first-child:hover {
+.section3 .link_flower_background a:first-child:hover {
   background-color: #fff;
   color: #f45d96;
 }
 
-.blog_home {
+.section3 .blog_home {
   padding: 3em 0;
 }
 
-.title_last_post {
+.section3 .title_last_post {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -85,16 +85,16 @@
   margin: 0 1%;
 }
 
-.title_last_post div {
+.section3 .title_last_post div {
   width: 50%;
   text-align: right;
 }
 
-.title_last_post div:first-of-type {
+.section3 .title_last_post div:first-of-type {
   text-align: left;
 }
 
-.title_last_post span {
+.section3 .title_last_post span {
   font-size: 1rem;
   text-transform: uppercase;
   color: #f45d96;
@@ -102,13 +102,13 @@
   font-family: "RobotoRegular";
 }
 
-.title_last_post h3 {
+.section3 .title_last_post h3 {
   font-family: "Playfair_regular";
   font-size: 3rem;
   font-weight: lighter;
 }
 
-.title_last_post a {
+.section3 .title_last_post a {
   text-decoration: none;
   border: 2px solid #f45d96;
   border-radius: 2em;
@@ -119,52 +119,52 @@
   font-family: "RobotoRegular";
 }
 
-.title_last_post a:hover {
+.section3 .title_last_post a:hover {
   background-color: #f45d96;
   color: #fff;
 }
 
-.list_posts {
+.section3 .list_posts {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.post_home {
+.section3 .post_home {
   width:31.33%;
   margin: 1em 1%;
   box-shadow: 0 0 1.2em grey;
   overflow: hidden;
 }
 
-.post_home:hover{
+.section3 .post_home:hover{
   transform: scale(1.05);
 }
 
-.post_home a{ color: transparent; text-decoration: none; display: block;}
+.section3 .post_home a{ color: transparent; text-decoration: none; display: block;}
 
-.post_home .body_post{
+.section3 .post_home .body_post{
   position: relative;
 }
 
-.post_home > a > div:first-of-type{
+.section3 .post_home > a > div:first-of-type{
   aspect-ratio: 1/1;
 }
 
-.post_home img {
+.section3 .post_home img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.body_post{
+.section3 .body_post{
   width: 85%;
   margin: 0 auto;
   text-align: center;
   padding: 2em 0;
 }
 
-.categorie_post{
+.section3 .categorie_post{
   position: absolute;
   top: -1.3em;
   left: 0;
@@ -174,7 +174,7 @@
   justify-content: center;
 }
 
-.categorie_post div{
+.section3 .categorie_post div{
   padding: 0.4em 0.8em;
   text-transform: uppercase;
   background-color: #000;
@@ -183,40 +183,40 @@
   font-family: "RobotoRegular";
 }
 
-.title_post{
+.section3 .title_post{
   font-size: 1.4rem;
   font-family: "Playfair_regular";
   color: #000;
 }
 
-.desc_post, .date_post{
+.section3 .desc_post, .date_post{
   font-family: "RobotoRegular";
   font-size: 1rem;
 }
 
-.desc_post{
+.section3 .section3 .desc_post{
   padding: 1em 0;
   line-height: 1.2rem;
   color: grey;
 }
 
-.date_post{
+.section3 .date_post{
   text-transform: uppercase;
   color: grey;
 }
 
 @media (max-width:600px){
- .post_home{
+  .section3 .post_home{
  width: 98%;
  } 
 
- .title_last_post div{
+ .section3 .title_last_post div{
    width: 100%;
  }
- .title_last_post div:first-of-type{
+ .section3 .title_last_post div:first-of-type{
    margin: 0 0 2em;
  }
- .title_last_post div:last-child{
+ .section3 .title_last_post div:last-child{
    text-align: center;
  }
 }
