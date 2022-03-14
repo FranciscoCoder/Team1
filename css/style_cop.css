@@ -443,6 +443,11 @@ header a {
   margin: 2em 1%;
 }
 
+.section2 .content > div a{
+  color: #000;
+  text-decoration: none;
+}
+
 .section2 .content > div > div {
   padding: 0.5em 0;
 }
@@ -455,22 +460,24 @@ header a {
   background-size: cover;*/
   width: 100%;
   /* height: 90%; */
-  
 }
 
-.section2 .description p{font-size: 1.3rem; padding: 1em 0;}
-.section2 .price{
+.section2 .description p {
+  font-size: 1.3rem;
+  padding: 1em 0;
+}
+.section2 .price {
   font-size: 1.2rem;
 }
 
-.image img{
+.image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   aspect-ratio: 4/7;
 }
 
-.section2 .view{
+.section2 .view {
   text-align: center;
   margin: 2em 0 6em;
 }
