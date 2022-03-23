@@ -37,6 +37,8 @@ body {
 
 /* Header */
 header {
+  --multiplier-font-factor: 1;
+  --multiplier-margin-factor: 1;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -45,11 +47,14 @@ header {
   justify-content: space-around;
   align-content: space-around;
 }
+header * {
+  transition: all 0.3s ease-in-out;
+}
 header .header_menu {
   width: 85%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   justify-content: space-between;
   align-items: center;
   padding: 1% 0;
@@ -59,16 +64,17 @@ header .header_buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 1% 0;
-  width: 85%;
+  justify-content: flex-end;
+}
+header .left_buttons, header .right_buttons {
+  margin: 0 1%;
 }
 header .left_buttons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 1% 0;
-  width: 70%;
 }
 header .right_buttons {
   display: flex;
@@ -76,11 +82,10 @@ header .right_buttons {
   flex-wrap: nowrap;
   justify-content: flex-end;
   padding: 1% 0;
-  width: 30%;
 }
 header .main_icon {
   padding: 0 0 0 1em;
-  width: 10%;
+  width: calc(5em * var(--multiplier-font-factor));
   aspect-ratio: 2 / 1.3;
   background-image: url(../img/logoo.png);
   background-repeat: no-repeat;
@@ -88,23 +93,27 @@ header .main_icon {
   background-size: cover;
 }
 header .header_buttons i {
-  font-size: 1.2rem;
-  color: var(--black);
+  font-size: calc(1.2rem * var(--multiplier-font-factor));
+  color: inherit;
   margin: 0 0.2em 0 0;
 }
 header .menu_button {
-  font-size: 1rem;
+  font-size: calc(1rem * var(--multiplier-font-factor));
   font-family: "RobotoRegular";
   color: var(--black);
   display: flex;
   flex-direction: row;
   background: none;
   justify-content: flex-end;
-  margin: 0 0.5em;
+  margin: 0 calc(1.5em * var(--multiplier-margin-factor));
   text-decoration: none;
 }
+header .menu_button:hover {
+  color: var(--light-pink);
+  transform: scale(1.05);
+}
 header .menu_icon {
-  font-size: 1rem;
+  font-size: calc(1rem * var(--multiplier-font-factor));
   font-family: "RobotoRegular";
   color: var(--black);
   display: flex;
@@ -117,20 +126,21 @@ header .menu_icon {
 header .menu_icon p {
   margin: 0 0.2em;
 }
-header form {
-  margin: 0 0 0 2.5%;
-}
 header .home_button {
   color: var(--light-pink);
 }
 header .header_menu p {
-  font-size: 0.8rem;
+  font-size: calc(0.8rem * var(--multiplier-font-factor));
   font-family: "RobotoRegular";
-  color: var(--black);
+  color: inherit;
   margin: 0 0 0 0.2em;
 }
 header p.important_info {
   color: var(--light-pink);
+}
+header .header_menu .right_buttons .menu_icon:hover {
+  color: var(--light-pink);
+  transform: scale(1.05);
 }
 header .banner_area {
   width: 100%;
@@ -149,35 +159,40 @@ header .banner_image {
   background-size: cover;
 }
 header .banner_info {
-  width: 40%;
-  margin: 5% 0 5% -85%;
+  width: 85%;
+  margin: 7.5em auto 7.5em;
 }
 header .banner_info h3 {
   font-family: "RobotoRegular";
   color: var(--black);
-  font-size: 0.8rem;
-  margin: 0 0 2%;
+  font-size: calc(0.8rem * var(--multiplier-font-factor));
+  margin: 0 0 1em;
   font-weight: 500;
 }
 header .banner_info h2 {
   font-family: "Playfair_regular";
   color: var(--black);
-  font-size: 2rem;
-  margin: 0 0 5%;
+  font-size: calc(2rem * var(--multiplier-font-factor));
+  margin: 0 0 1em;
   font-weight: 500;
 }
-header .banner_info a {
+header .banner_info a  {
   font-family: "RobotoRegular";
   color: var(--white);
-  font-size: 0.75rem;
-  padding: 2.5% 5%;
+  font-size: calc(0.8rem * var(--multiplier-font-factor));
+  padding: 1em 1.75em;
   background-color: var(--light-pink);
   border-radius: 2em;
-  font-weight: 600;
+  font-weight: 900;
   text-decoration: none;
+  border: solid 2px var(--light-pink);
 }
 header a {
   cursor: pointer;
+}
+header .banner_info a:hover {
+  background-color: var(--white);
+  color: var(--light-pink);
 }
 
 /* END header */
@@ -186,6 +201,10 @@ header a {
 .section_01 {
   width: 85%;
   margin: 0 auto;
+  --multiplier-font-factor: 1;
+}
+.section_01 * {
+  transition: all 0.3s ease-in-out;
 }
 .section_01 .business_qualities,
 .section_01 .product_display {
@@ -220,8 +239,28 @@ header a {
 }
 .section_01 .business_icon i {
   color: var(--light-pink);
-  font-size: 2rem;
+  font-size: calc(1.75rem * var(--multiplier-font-factor));
   margin: 0.25% 0;
+  cursor: pointer;
+}
+@keyframes go-around {
+  from {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-.25em) skew(10deg);
+  }
+  75% {
+    transform: translateY(.25em) skew(-10deg);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.section_01 .business_icon i:hover {
+  animation: go-around 1s ease-in-out;
+  animation-iteration-count: 4;
+  animation-direction: normal;
 }
 .section_01 .business_info {
   width: 80%;
@@ -233,14 +272,14 @@ header a {
 .section_01 .business_info h3,
 .section_01 .product_info h2 {
   font-family: "Playfair_regular";
-  font-size: 1.2rem;
+  font-size: calc(1.2rem * var(--multiplier-font-factor));
   font-weight: 400;
   color: var(--black);
 }
 .section_01 .business_info p,
 .section_01 .product_info p {
   font-family: "Playfair_regular";
-  font-size: 1rem;
+  font-size: calc(1rem * var(--multiplier-font-factor));
   font-weight: 400;
   color: var(--dark-gray);
 }
@@ -269,6 +308,11 @@ header a {
   flex-direction: row;
   align-items: flex-end;
   aspect-ratio: 3 / 4;
+  cursor: pointer;
+  box-shadow: 0 0 1.2em grey;
+}
+.section_01 .product_display_box:hover {
+  transform: scale(1.05);
 }
 .section_01 .product_image {
   padding: 0;
@@ -306,14 +350,14 @@ header a {
 }
 .section_01 .service_title h2 {
   font-family: "Playfair_regular";
-  font-size: 2.9rem;
+  font-size: calc(2.9rem * var(--multiplier-font-factor));
   color: var(--black);
   text-align: left;
 }
 .section_01 .service_title p,
 .section_01 .contact_info h3 {
   font-family: "RobotoRegular";
-  font-size: 1rem;
+  font-size: calc(1rem * var(--multiplier-font-factor));
   font-weight: 600;
   color: var(--light-pink);
   text-align: left;
@@ -321,8 +365,8 @@ header a {
 .section_01 .service_info p,
 .section_01 .contact_info p {
   font-family: "RobotoRegular";
-  font-size: 1.2rem;
-  line-height: 2.2rem;
+  font-size: calc(1.2rem * var(--multiplier-font-factor));
+  line-height: calc(2.2rem * var(--multiplier-font-factor));
   color: var(--dark-gray);
   text-align: left;
 }
@@ -348,6 +392,7 @@ header a {
   margin: 0 0 4% -5%;
   background-color: var(--white);
   z-index: 2;
+
 }
 .section_01 .contact_info h2,
 .section_01 .contact_info p {
@@ -355,7 +400,7 @@ header a {
 }
 .section_01 .contact_info h2 {
   font-family: "Playfair_regular";
-  font-size: 2.5rem;
+  font-size: calc(2.5rem * var(--multiplier-font-factor));
   color: var(--black);
   text-align: left;
   margin: 2.5% 5% 0;
@@ -363,16 +408,24 @@ header a {
 .section_01 .contact_info h3 {
   margin: 5% 5% 0;
 }
-.section_01 .contact_info button {
+.contact_button {
+margin: 5% 5% 7.5%;
+}
+.section_01 .contact_info a {
+  text-decoration: none;
   padding: 1em 1.75em;
   border-radius: 2em;
   font-family: "RobotoRegular";
-  font-size: 0.8rem;
+  font-size: calc(0.8rem * var(--multiplier-font-factor));
   font-weight: 900;
   color: var(--white);
   background-color: var(--light-pink);
-  margin: 5% 5% 5%;
   cursor: pointer;
+}
+.section_01 .contact_info a:hover {
+  background-color: var(--white);
+  color: var(--light-pink);
+  border: solid 2px var(--light-pink);
 }
 /* END Section 1 */
 
@@ -916,117 +969,46 @@ h5 {
 /*RESPONSIVES*/
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 2000px) {
-  .section_01 .business_icon i {
-    font-size: calc(1.1 / 0.785 * 2rem);
+  header {
+    --multiplier-margin-factor: 1;
   }
-  .section_01 .business_info h3,
-  .section_01 .product_info h2 {
-    font-size: calc(1.1 / 0.785 * 1.2rem);
-  }
-  .section_01 .business_info p,
-  .section_01 .product_info p {
-    font-size: calc(1.1 / 0.785 * 1rem);
-  }
-  .section_01 .service_title h2 {
-    font-size: calc(1.1 / 0.785 * 2.9rem);
-  }
-  .section_01 .service_title p,
-  .section_01 .contact_info h3 {
-    font-size: calc(1.1 / 0.785 * 1rem);
-  }
-  .section_01 .service_info p,
-  .section_01 .contact_info p {
-    font-size: calc(1.1 / 0.785 * 1.2rem);
-    line-height: calc(1.1 / 0.785 * 2.2rem);
-  }
-  .section_01 .contact_info h2 {
-    font-size: calc(1.1 / 0.785 * 2.5);
-  }
-  .section_01 .contact_info button {
-    font-size: calc(1.1 / 0.785 * 0.8rem);
+  .section_01, header {
+    --multiplier-font-factor: 1.2;
   }
 }
 
 /* Large devices (laptops/desktops, between 993px and 1200px) */
 @media only screen and (max-width: 1200px) {
-  .section_01 .business_icon i {
-    font-size: calc(1 / 0.785 * 2rem);
+  header {
+    --multiplier-margin-factor: 0.8;
   }
-  .section_01 .business_info h3,
-  .section_01 .product_info h2 {
-    font-size: calc(1 / 0.785 * 1.2rem);
-  }
-  .section_01 .business_info p,
-  .section_01 .product_info p {
-    font-size: calc(1 / 0.785 * 1rem);
-  }
-  .section_01 .service_title h2 {
-    font-size: calc(1 / 0.785 * 2.9rem);
-  }
-  .section_01 .service_title p,
-  .section_01 .contact_info h3 {
-    font-size: calc(1 / 0.785 * 1rem);
-  }
-  .section_01 .service_info p,
-  .section_01 .contact_info p {
-    font-size: calc(1 / 0.785 * 1.2rem);
-    line-height: calc(1 / 0.785 * 2.2rem);
-  }
-  .section_01 .contact_info h2 {
-    font-size: calc(1 / 0.785 * 2.5);
-  }
-  .section_01 .contact_info button {
-    font-size: calc(1 / 0.785 * 0.8rem);
+  .section_01, header {
+    --multiplier-font-factor: 1.1;
   }
 }
 
 /* Large devices (laptops/desktops, between 769px and 992px) */
 @media only screen and (max-width: 992px) {
-  .section_01 .business_icon i {
-    font-size: calc(0.7 / 0.785 * 2rem);
+  header {
+    --multiplier-margin-factor: 0.7;
   }
-  .section_01 .business_info h3,
-  .section_01 .product_info h2 {
-    font-size: calc(0.7 / 0.785 * 1.2rem);
-  }
-  .section_01 .business_info p,
-  .section_01 .product_info p {
-    font-size: calc(0.7 / 0.785 * 1rem);
-  }
-  .section_01 .service_title h2 {
-    font-size: calc(0.7 / 0.785 * 2.9rem);
-  }
-  .section_01 .service_title p,
-  .section_01 .contact_info h3 {
-    font-size: calc(0.7 / 0.785 * 1rem);
-  }
-  .section_01 .service_info p,
-  .section_01 .contact_info p {
-    font-size: calc(0.7 / 0.785 * 1.2rem);
-    line-height: calc(0.7 / 0.785 * 2.2rem);
-  }
-  .section_01 .contact_info h2 {
-    font-size: calc(0.7 / 0.785 * 2.5);
-  }
-  .section_01 .contact_info button {
-    font-size: calc(0.7 / 0.785 * 0.8rem);
+  .section_01, header {
+    --multiplier-font-factor: 0.9;
   }
 }
 
 /* Medium devices (landscape tablets, between 601px and 768px) */
 @media only screen and (max-width: 768px) {
-  header .header_buttons {
-    flex-wrap: wrap;
+  header {
+    --multiplier-margin-factor: 0.5;
   }
-  header .menu_button {
-    width: 30%;
+  .section_01, header {
+    --multiplier-font-factor: 1;
   }
+
   header .header_buttons {
     flex-wrap: wrap;
     justify-content: flex-end;
-    /* justify-content: center;
-    align-items: center;
-    padding: 1% 0; */
   }
   header .left_buttons {
     display: flex;
@@ -1041,13 +1023,14 @@ h5 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
     padding: 1% 0;
     width: 100%;
     justify-content: flex-end;
   }
-
+  header .main_icon {
+    width: calc(7em * var(--multiplier-font-factor));
+  }
   .section_01 .business_qualities_box,
   .section_01 .product_display_box {
     width: 47%;
@@ -1066,40 +1049,20 @@ h5 {
     width: 90%;
     margin: -5% 0 0 10%;
   }
-  .section_01 .business_icon i {
-    font-size: calc(0.9 / 0.785 * 2rem);
-  }
-  .section_01 .business_info h3,
-  .section_01 .product_info h2 {
-    font-size: calc(0.9 / 0.785 * 1.2rem);
-  }
-  .section_01 .business_info p,
-  .section_01 .product_info p {
-    font-size: calc(0.9 / 0.785 * 1rem);
-  }
-  .section_01 .service_title h2 {
-    font-size: calc(0.9 / 0.785 * 2.9rem);
-  }
-  .section_01 .service_title p,
-  .section_01 .contact_info h3 {
-    font-size: calc(0.9 / 0.785 * 1rem);
-  }
-  .section_01 .service_info p,
-  .section_01 .contact_info p {
-    font-size: calc(0.9 / 0.785 * 1.2rem);
-    line-height: calc(0.9 / 0.785 * 2.2rem);
-  }
-  .section_01 .contact_info h2 {
-    font-size: calc(0.9 / 0.785 * 2.5);
-  }
-  .section_01 .contact_info button {
-    font-size: calc(0.9 / 0.785 * 0.8rem);
-  }
 }
 
 /* Extra small devices (phones, between 500 px and 600px) */
 @media only screen and (max-width: 600px) {
+  /* Header */
+  header {
+    --multiplier-margin-factor: 0.25;
+  }
+/* End Header */
+
   /* Section 1 */
+  .section_01, header {
+    --multiplier-font-factor: 1;
+  }
   .section_01 .service_description {
     flex-direction: column;
   }
@@ -1108,35 +1071,6 @@ h5 {
   }
   .section_01 .service_info {
     width: 100%;
-  }
-  .section_01 .business_icon i {
-    font-size: calc(1 / 0.785 * 2rem);
-  }
-  .section_01 .business_info h3,
-  .section_01 .product_info h2 {
-    font-size: calc(1 / 0.785 * 1.2rem);
-  }
-  .section_01 .business_info p,
-  .section_01 .product_info p {
-    font-size: calc(1 / 0.785 * 1rem);
-  }
-  .section_01 .service_title h2 {
-    font-size: calc(1 / 0.785 * 2.9rem);
-  }
-  .section_01 .service_title p,
-  .section_01 .contact_info h3 {
-    font-size: calc(1 / 0.785 * 1rem);
-  }
-  .section_01 .service_info p,
-  .section_01 .contact_info p {
-    font-size: calc(1 / 0.785 * 1.2rem);
-    line-height: calc(1 / 0.785 * 2.2rem);
-  }
-  .section_01 .contact_info h2 {
-    font-size: calc(1 / 0.785 * 2.5);
-  }
-  .section_01 .contact_info button {
-    font-size: calc(1 / 0.785 * 0.8rem);
   }
   /* End Section 1 */
 
@@ -1159,26 +1093,31 @@ h5 {
 
 /* Very small devices (phones, smaller than 500 px) */
 @media (max-width: 500px) {
+  header {
+    --multiplier-margin-factor: 0.25;
+  }
+  .section_01, header {
+    --multiplier-font-factor: 0.8;
+  }
+  header .header_buttons {
+    width: 80vw;
+  }
+  header .left_buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: .5em;
+  }
+  header .menu_button {
+    justify-content: right;
+    align-items:flex-start;
+    height: 100%;
+  }
+  header .home_button {
+    grid-row: span 2;
+  }
   .section_01 .business_qualities_box,
   .section_01 .product_display_box {
     width: 100%;
-  }
-  .section_01 .service_title h2 {
-    font-size: calc(0.8 / 0.785 * 2.9rem);
-  }
-  .section_01 .service_title p,
-  .section_01 .contact_info h3 {
-    font-size: calc(0.8 / 0.785 * 1rem);
-  }
-  .section_01 .service_info p,
-  .section_01 .contact_info p {
-    font-size: calc(0.8 / 0.785 * 1.2rem);
-    line-height: calc(0.8 / 0.785 * 2.2rem);
-  }
-  .section_01 .contact_info h2 {
-    font-size: calc(0.8 / 0.785 * 2.5);
-  }
-  .section_01 .contact_info button {
-    font-size: calc(0.8 / 0.785 * 0.8rem);
   }
 }
